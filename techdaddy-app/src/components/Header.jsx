@@ -30,20 +30,22 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white shadow-lg' 
+          ? 'bg-black/90 backdrop-blur-md shadow-lg border-b border-primary-500/20' 
           : 'bg-transparent'
       }`}
     >
       <nav className="container-custom">
-        <div className="flex items-center justify-between py-6">
+        <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="text-2xl font-bold">
-              <span className={`transition-colors duration-300 ${
-                isScrolled ? 'text-primary-900' : 'text-white'
-              }`}>
-                TechDaddy
-              </span>
+            <img 
+              src="/images/logo-icon.svg" 
+              alt="TechDaddy Icon" 
+              className="h-10 w-10 neuron-glow"
+            />
+            <div className="text-xl font-bold">
+              <span className="text-primary-400">Tech</span>
+              <span className="text-white">Daddy</span>
             </div>
           </Link>
 
@@ -51,24 +53,24 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-12">
             <button
               onClick={() => scrollToSection('home')}
-              className={`font-medium transition-colors duration-300 hover:text-secondary-500 ${
-                isScrolled ? 'text-primary-700' : 'text-white/90'
+              className={`font-medium transition-colors duration-300 hover:text-primary-400 ${
+                isScrolled ? 'text-white' : 'text-white/90'
               }`}
             >
               HOME
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className={`font-medium transition-colors duration-300 hover:text-secondary-500 ${
-                isScrolled ? 'text-primary-700' : 'text-white/90'
+              className={`font-medium transition-colors duration-300 hover:text-primary-400 ${
+                isScrolled ? 'text-white' : 'text-white/90'
               }`}
             >
               ABOUT
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className={`font-medium transition-colors duration-300 hover:text-secondary-500 ${
-                isScrolled ? 'text-primary-700' : 'text-white/90'
+              className={`font-medium transition-colors duration-300 hover:text-primary-400 ${
+                isScrolled ? 'text-white' : 'text-white/90'
               }`}
             >
               CONTACT
@@ -78,9 +80,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className={`md:hidden p-2 rounded-md transition-colors duration-300 ${
-              isScrolled ? 'text-primary-900' : 'text-white'
-            }`}
+            className="md:hidden p-2 rounded-md transition-colors duration-300 text-white"
           >
             <svg
               className="w-6 h-6"
@@ -113,23 +113,23 @@ const Header = () => {
             isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="bg-white shadow-lg rounded-lg mx-4 mb-4 p-6">
+          <div className="bg-black/95 backdrop-blur-md rounded-lg shadow-lg mx-4 mb-4 p-6 border border-primary-500/20">
             <div className="flex flex-col space-y-6">
               <button
                 onClick={() => scrollToSection('home')}
-                className="text-primary-700 font-medium hover:text-secondary-500 transition-colors text-left"
+                className="text-white font-medium hover:text-primary-400 transition-colors text-left"
               >
                 HOME
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-primary-700 font-medium hover:text-secondary-500 transition-colors text-left"
+                className="text-white font-medium hover:text-primary-400 transition-colors text-left"
               >
                 ABOUT
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-primary-700 font-medium hover:text-secondary-500 transition-colors text-left"
+                className="text-white font-medium hover:text-primary-400 transition-colors text-left"
               >
                 CONTACT
               </button>

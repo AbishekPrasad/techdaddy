@@ -1,26 +1,26 @@
 const ProblemSection = () => {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-black">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 mb-8 fade-in">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 fade-in text-glow">
             One Powerful Shift
           </h2>
 
           {/* Problem Statement */}
           <div className="mb-12 fade-in">
-            <p className="text-xl md:text-2xl text-primary-700 mb-6 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white mb-6 leading-relaxed">
               <strong>Most businesses don't fail because of a lack of ideas.</strong><br />
               <strong>They fail because they don't fix the right problem.</strong>
             </p>
             
-            <p className="text-lg md:text-xl text-primary-600 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
               At any given time, there's <strong>one key constraint</strong> — one invisible obstacle — 
               silently holding your business back.
             </p>
             
-            <p className="text-xl md:text-2xl font-semibold text-primary-900">
+            <p className="text-xl md:text-2xl font-semibold text-primary-400">
               Solve it, and everything changes.
             </p>
           </div>
