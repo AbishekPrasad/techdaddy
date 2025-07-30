@@ -30,73 +30,56 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg' 
+          ? 'bg-white shadow-lg' 
           : 'bg-transparent'
       }`}
     >
       <nav className="container-custom">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-6">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">TD</span>
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="text-2xl font-bold">
+              <span className={`transition-colors duration-300 ${
+                isScrolled ? 'text-primary-900' : 'text-white'
+              }`}>
+                TechDaddy
+              </span>
             </div>
-            <span className={`text-xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-gray-900' : 'text-white'
-            }`}>
-              TechDaddy
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             <button
               onClick={() => scrollToSection('home')}
-              className={`font-medium transition-colors duration-300 hover:text-primary-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white/90'
+              className={`font-medium transition-colors duration-300 hover:text-secondary-500 ${
+                isScrolled ? 'text-primary-700' : 'text-white/90'
               }`}
             >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection('services')}
-              className={`font-medium transition-colors duration-300 hover:text-primary-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white/90'
-              }`}
-            >
-              Services
+              HOME
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className={`font-medium transition-colors duration-300 hover:text-primary-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white/90'
+              className={`font-medium transition-colors duration-300 hover:text-secondary-500 ${
+                isScrolled ? 'text-primary-700' : 'text-white/90'
               }`}
             >
-              About
+              ABOUT
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className={`font-medium transition-colors duration-300 hover:text-primary-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white/90'
+              className={`font-medium transition-colors duration-300 hover:text-secondary-500 ${
+                isScrolled ? 'text-primary-700' : 'text-white/90'
               }`}
             >
-              Contact
+              CONTACT
             </button>
-            <a
-              href="https://forms.google.com/your-form-id"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Get Started
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
             className={`md:hidden p-2 rounded-md transition-colors duration-300 ${
-              isScrolled ? 'text-gray-900' : 'text-white'
+              isScrolled ? 'text-primary-900' : 'text-white'
             }`}
           >
             <svg
@@ -130,40 +113,26 @@ const Header = () => {
             isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="bg-white/95 backdrop-blur-md rounded-lg shadow-lg mx-4 mb-4 p-4">
-            <div className="flex flex-col space-y-4">
+          <div className="bg-white shadow-lg rounded-lg mx-4 mb-4 p-6">
+            <div className="flex flex-col space-y-6">
               <button
                 onClick={() => scrollToSection('home')}
-                className="text-gray-700 font-medium hover:text-primary-600 transition-colors text-left"
+                className="text-primary-700 font-medium hover:text-secondary-500 transition-colors text-left"
               >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection('services')}
-                className="text-gray-700 font-medium hover:text-primary-600 transition-colors text-left"
-              >
-                Services
+                HOME
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 font-medium hover:text-primary-600 transition-colors text-left"
+                className="text-primary-700 font-medium hover:text-secondary-500 transition-colors text-left"
               >
-                About
+                ABOUT
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-gray-700 font-medium hover:text-primary-600 transition-colors text-left"
+                className="text-primary-700 font-medium hover:text-secondary-500 transition-colors text-left"
               >
-                Contact
+                CONTACT
               </button>
-              <a
-                href="https://forms.google.com/your-form-id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-center"
-              >
-                Get Started
-              </a>
             </div>
           </div>
         </div>
