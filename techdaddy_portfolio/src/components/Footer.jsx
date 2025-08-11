@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left mt-4">
-        <p className="text-light/70 text-sm flex items-center"><FaEnvelope className="mr-2" />info@techdaddy.com</p>
+        <p className="text-light/70 text-sm flex items-center"><FaEnvelope className="mr-2" />techdaddy@techdaddy.global</p>
         <p className="text-light/70 text-sm flex items-center"><FaPhoneAlt className="mr-2" />+91 9340003799</p>
       </div>
     </motion.footer>
