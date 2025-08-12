@@ -10,6 +10,7 @@ import Blog from './components/Blog';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
         </motion.main>
       </AnimatePresence>
       <Footer key="app-footer" />
+      <Chatbot />
     </div>
   );
 }
