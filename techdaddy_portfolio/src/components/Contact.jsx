@@ -19,6 +19,8 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // The 'e.target' in emailjs.sendForm automatically includes all form fields with a 'name' attribute.
+    // Since the mobile number input has name="mobile", it will be included in the email data.
     emailjs.sendForm('service_fyyo7d1', 'template_hgnw5b7', e.target, 'v_UeQeck9aiZCrJb7')
       .then((result) => {
         console.log(result.text);
