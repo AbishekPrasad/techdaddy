@@ -19,7 +19,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_fyyo7d1', 'template_hgnw5b7', e.target, 'v_UeQeck9aiZCrJb7')
       .then((result) => {
         console.log(result.text);
         alert('Thank you for your message! We will get back to you soon.');
