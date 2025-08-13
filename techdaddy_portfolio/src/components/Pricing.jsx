@@ -49,7 +49,7 @@ function PricingPlan({ title, price, features }) {
       </ul>
       <div className="mt-8">
         <motion.a
-          href="#contact"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScd1ipU__LcZP0hbZwENcKrwWAyQrDlIcdYiskcCzhYmtbWKQ/viewform?usp=headert"
           className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-neon to-neon/60 text-dark font-semibold shadow-lg hover:shadow-neon transition-all duration-300"
           whileHover={{ ...buttonHover, ...glowEffect }}
         >
