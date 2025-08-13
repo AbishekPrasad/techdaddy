@@ -33,7 +33,7 @@ export default function Home() {
           className="mt-8 flex justify-center gap-4"
         >
           <motion.a
-            href="#contact"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScd1ipU__LcZP0hbZwENcKrwWAyQrDlIcdYiskcCzhYmtbWKQ/viewform?usp=headert"
             className="px-6 py-3 rounded-full bg-gradient-to-r from-neon to-neon/60 text-dark font-semibold shadow-lg hover:shadow-neon transition-all duration-300"
             whileHover={{ ...buttonHover, ...glowEffect }}
           >
